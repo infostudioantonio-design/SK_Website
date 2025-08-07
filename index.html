@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperKonnected - Van netwerken naar verbinden</title>
+    <meta name="description" content="SuperKonnected podcast - Inspirerende verhalen van ondernemers die van niets naar succes zijn gegaan. Met Abdul Antonio.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="podcast, ondernemers, netwerken, SuperKonnected, Abdul Antonio, business, entrepreneurship">
+    <meta name="author" content="SuperKonnected">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SuperKonnected - Van netwerken naar verbinden">
+    <meta property="og:description" content="Inspirerende verhalen van ondernemers die van niets naar succes zijn gegaan. Met Abdul Antonio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://superkonnected.com">
+    <meta property="og:image" content="assets/superKonnected Logo svg.svg">
+    <meta property="og:site_name" content="SuperKonnected">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SuperKonnected - Van netwerken naar verbinden">
+    <meta name="twitter:description" content="Inspirerende verhalen van ondernemers die van niets naar succes zijn gegaan.">
+    <meta name="twitter:image" content="assets/superKonnected Logo svg.svg">
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/superKonnected Logo svg.svg" as="image">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scroll-animations.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SuperKonnected",
+        "description": "Van netwerken naar verbinden - Inspirerende verhalen van ondernemers",
+        "url": "https://superkonnected.com",
+        "publisher": {
+            "@type": "Organization",
+            "name": "SuperKonnected",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "assets/superKonnected Logo svg.svg"
+            }
+        },
+        "potentialAction": {
+            "@type": "ListenAction",
+            "target": "https://open.spotify.com/show/superkonnected"
+        }
+    }
+    </script>
+    
+    <!-- Theme Color for Mobile -->
+    <meta name="theme-color" content="#0A2342">
+    <meta name="msapplication-TileColor" content="#0A2342">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="assets/superKonnected Logo svg.svg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="SuperKonnected">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/superKonnected Logo svg.svg" alt="SuperKonnected" class="loading-logo-img">
+            </div>
+            <div class="loading-spinner"></div>
+                                        <p class="loading-text">SuperKonnected laden...</p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Hoofdnavigatie">
+        <div class="container">
+            <div class="nav-brand">
+                <h2 class="brand-logo">SuperKonnected</h2>
+            </div>
+            <div class="nav-menu" role="menubar">
+                <a href="#home" class="nav-link" role="menuitem" aria-label="Ga naar home sectie">Home</a>
+<a href="#about" class="nav-link" role="menuitem" aria-label="Ga naar over de podcast sectie">Over de Podcast</a>
+<a href="#community" class="nav-link" role="menuitem" aria-label="Ga naar community sectie">Community</a>
+<a href="#episodes" class="nav-link" role="menuitem" aria-label="Ga naar episodes sectie">Episodes</a>
+<a href="#sponsors" class="nav-link" role="menuitem" aria-label="Ga naar sponsors sectie">Sponsors</a>
+<a href="#abdul" class="nav-link" role="menuitem" aria-label="Ga naar Abdul Antonio sectie">Abdul Antonio</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background Layers -->
+        <div class="hero-background">
+            <div class="hero-layer hero-layer-1"></div>
+            <div class="hero-layer hero-layer-2"></div>
+        </div>
+        
+        <!-- Parallax Layers -->
+        <div class="hero-parallax">
+            <div class="hero-layer hero-layer-3"></div>
+            <div class="hero-layer hero-layer-4"></div>
+            <div class="hero-layer hero-layer-5"></div>
+            <div class="hero-layer hero-layer-6"></div>
+            <div class="hero-layer hero-layer-7"></div>
+        </div>
+        
+        <!-- Content Overlay -->
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="assets/superKonnected Logo svg.svg" alt="SuperKonnected Logo" class="main-logo">
+                        <p class="hero-tagline">
+                            Van netwerken naar verbinden
+                        </p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-spotify">
+                            <i class="fab fa-spotify"></i>
+                            <span>Luister nu op Spotify</span>
+                        </a>
+                        <a href="#about" class="btn btn-ghost">
+                            <i class="fas fa-users"></i>
+                            <span>Doe mee als gast</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-scroll">
+                        <div class="scroll-indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over de Podcast Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Over de podcast</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <!-- Left Column -->
+                <div class="about-left">
+                    <h3 class="about-main-title">Elke aflevering van SuperKonnected brengt 6 ondernemers samen</h3>
+                    
+                    <div class="podcast-features">
+                        <div class="podcast-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>2 hoofdgasten</h4>
+                                <p>Diepgaande gesprekken over actuele ondernemersonderwerpen.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-feature">
+                            <div class="feature-icon orange">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>3 deelnemers</h4>
+                                <p>Luisteren, leren, vragen stellen en zich kort voorstellen.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="podcast-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>1 host</h4>
+                                <p>Abdul Antonio begeleidt het gesprek en zorgt voor verbinding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                            <div class="podcast-stats">
+                        <div class="stat-card glass-layer glass-layer-orange shimmer-effect">
+                            <div class="glass-layer-content">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>45-60 minuten</h4>
+                                    <p>Per aflevering</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card glass-layer glass-layer-blue gloss-effect">
+                            <div class="glass-layer-content">
+                                <div class="stat-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Nieuwe inzichten</h4>
+                                    <p>& echte connecties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="about-right">
+                    <div class="why-choose-card">
+                        <h3>Waarom ondernemers kiezen voor SuperKonnected</h3>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="benefit-content">
+                                                                <h4>Diepgang:</h4>
+                            <p>Geen koetjes & kalfjes – maar échte gesprekken die ertoe doen.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="benefit-content">
+                                                                <h4>Nieuwe connecties:</h4>
+                            <p>Breid je netwerk uit met ondernemers die waarde toevoegen.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="benefit-content">
+                                                                <h4>Directe waarde:</h4>
+                            <p>Praktische inzichten om morgen al toe te passen in je bedrijf.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            "Dit is het meest waardevolle ondernemersgesprek dat ik in jaren heb gevoerd."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                                            <h5>Annemarie</h5>
+                            <p>Ondernemer & SuperKonnected-gast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doel Section -->
+    <section id="doel" class="doel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Doel van de SuperKonnected Podcast</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="doel-content">
+                <div class="doel-intro">
+                    <p class="doel-description">
+                        De SuperKonnected Podcast wil ondernemers op een dieper niveau verbinden dan traditioneel netwerken. 
+                        Het gaat niet alleen om contacten leggen, maar om <strong>echte relaties bouwen</strong>: ondernemers die elkaar oprecht helpen 
+                        en samen streven naar het beste resultaat.
+                    </p>
+                </div>
+                
+                <div class="doel-pillars">
+                    <div class="pillar-card glass-layer glass-layer-orange shine-effect">
+                        <div class="glass-layer-content">
+                            <div class="pillar-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>Kennisbron</h3>
+                            <p>Inspirerende gesprekken met ondernemers en experts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pillar-card glass-layer glass-layer-premium metallic-shine">
+                        <div class="glass-layer-content">
+                            <div class="pillar-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Communitybouwer</h3>
+                            <p>Een platform voor ondernemers die elkaar versterken.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pillar-card glass-layer glass-layer-blue sparkle-effect">
+                        <div class="glass-layer-content">
+                            <div class="pillar-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Springplank voor samenwerking</h3>
+                            <p>Vanuit de podcast naar live events, masterclasses en gezamenlijke projecten.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doel-outcome">
+                    <div class="outcome-content">
+                        <h3>Het Resultaat</h3>
+                        <p>
+                            Zo groeit SuperKonnected uit tot een <strong>krachtig ondernemersnetwerk</strong> dat elkaar vooruithelpt 
+                            en samen nieuwe kansen creëert.
+                        </p>
+                        <div class="outcome-cta">
+                            <a href="#community" class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Ontdek onze Community</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="outcome-visual">
+                        <div class="network-animation">
+                            <div class="network-node"></div>
+                            <div class="network-node"></div>
+                            <div class="network-node"></div>
+                            <div class="network-node"></div>
+                            <div class="network-lines"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community-section">
+        <div class="container">
+                    <div class="section-header">
+            <h2 class="section-title">Community</h2>
+            <p class="section-subtitle">Word onderdeel van onze groeiende community van ondernemers</p>
+        </div>
+            
+            <div class="community-main-content">
+                <!-- Left Column: Onze Community -->
+                <div class="community-left">
+                    <h3>Onze Community</h3>
+                    
+                    <div class="community-features">
+                        <div class="feature-item">
+                            <div class="feature-circle">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Live Events & Meetups</h4>
+                                <p>Offline bijeenkomsten met 50-60 ondernemers voor waardevolle contacten in Nederland.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-circle">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Exclusive Community</h4>
+                                <p>Toegang tot de privé "SuperKonnected Chat" voor continue ondersteuning en netwerken.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-circle">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Network Events</h4>
+                                <p>Informele events met waardevolle connecties in verschillende Nederlandse steden.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-circle">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Online Community</h4>
+                                <p>Word lid van de "SuperKonnected Chat" voor continue waardevol netwerken.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Community Verzameling -->
+                <div class="community-right">
+                    <div class="signup-card">
+                        <h3>Community-verzameling</h3>
+                        
+                        <div class="signup-features">
+                            <div class="signup-feature">
+                                <h4>LinkedIn groep "SuperKonnected Chat"</h4>
+                                <p>Ondernemers van verschillende branches en fasen.</p>
+                            </div>
+                            
+                            <div class="signup-feature">
+                                <h4>WhatsApp</h4>
+                                <p>Alleen voor exclusief netwerken.</p>
+                            </div>
+                            
+                            <div class="signup-feature">
+                                <h4>Events & Live</h4>
+                                <p>Kom naar exclusieve live netwerking.</p>
+                            </div>
+                            
+                            <div class="signup-feature">
+                                <h4>Live Q&A's & Sessions</h4>
+                                <p>Wie wil deelnemen aan live.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="join-community-btn">
+                            <span>Doe mee</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <p class="signup-note">Gratis. Direct toegang na aanmelden.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="community-stats">
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Ondernemers per Aflevering</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">45-60</div>
+                    <div class="stat-label">Minuten per Aflevering</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Hoofdgasten per Aflevering</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow Us Section -->
+    <section id="follow" class="follow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Volg ons</h2>
+                <p class="section-subtitle">Blijf op de hoogte van onze laatste afleveringen en community updates</p>
+            </div>
+            
+            <div class="social-platforms">
+                <div class="platform-card glass-layer glass-layer-blue shimmer-effect">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Volg ons voor updates<br>SuperKonnected content<br>en netwerken</p>
+                        <a href="https://www.linkedin.com/company/superkonnected/" target="_blank" rel="noopener noreferrer" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+                
+                <div class="platform-card glass-layer glass-layer-orange gloss-effect">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <h3>Spotify</h3>
+                        <p>Luister naar onze podcast<br>onderweg</p>
+                        <a href="https://open.spotify.com/show/3b1u7Ov3Ex9ALzRD2Iy3jq" target="_blank" rel="noopener noreferrer" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+                
+                <div class="platform-card glass-layer glass-layer-premium shine-effect">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>Bekijk onze video content<br>achter de schermen</p>
+                        <a href="https://www.youtube.com/@SuperKonnected" target="_blank" rel="noopener noreferrer" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="follow-cta">
+                <a href="#" class="btn btn-primary">
+                                            <span>Word lid van de SuperKonnected Community</span>
+                    <i class="fas fa-users"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsormogelijkheden Section -->
+    <section id="sponsoring" class="sponsoring-section">
+        <div class="container">
+            <div class="section-header sponsoring-header">
+                <h2 class="section-title">Sponsormogelijkheden</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Ondersteun onze podcast en bereik duizenden ondernemers</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <!-- Basis Card -->
+                <div class="pricing-card glass-layer glass-layer-orange gloss-effect">
+                    <div class="glass-layer-content">
+                        <div class="card-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3 class="card-title">Basis</h3>
+                        <p class="card-subtitle">Perfect voor starters</p>
+                    <div class="card-price">
+                        <span class="price">€500</span><span class="period">/maand</span>
+                    </div>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Pre-roll mention</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Social media shoutout</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Logo in show notes</span>
+                        </div>
+                    </div>
+                    
+                        <button class="pricing-btn pricing-btn-basic">Kies Basis</button>
+                    </div>
+                </div>
+                
+                <!-- Premium Card -->
+                <div class="pricing-card premium-card glass-layer glass-layer-premium sparkle-effect">
+                    <div class="popular-badge">Meest Populair</div>
+                    <div class="glass-layer-content">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="card-title">Premium</h3>
+                        <p class="card-subtitle">Voor groeiende bedrijven</p>
+                    <div class="card-price">
+                        <span class="price">€1.500</span><span class="period">/maand</span>
+                    </div>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Pre-roll + mid-roll mention</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>LinkedIn carrousel post</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Snippet branding</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Exclusieve content</span>
+                        </div>
+                    </div>
+                    
+                        <button class="pricing-btn pricing-btn-premium">Kies Premium</button>
+                    </div>
+                </div>
+                
+                <!-- Events Card -->
+                <div class="pricing-card glass-layer glass-layer-blue metallic-shine">
+                    <div class="glass-layer-content">
+                        <div class="card-icon events-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Events</h3>
+                        <p class="card-subtitle">Voor grote merken</p>
+                    <div class="card-price">
+                        <span class="price">Op maat</span><span class="period">/project</span>
+                    </div>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Podcast sponsoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Live event zichtbaarheid</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Custom content</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Exclusieve partnership</span>
+                        </div>
+                    </div>
+                    
+                        <button class="pricing-btn pricing-btn-events">Neem contact op</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sponsor-cta">
+                <a href="#" class="btn btn-sponsor">
+                    <span>Vraag de sponsor 1-pager aan</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section id="episodes" class="episodes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Laatste Episodes</h2>
+                <p class="section-subtitle">Luister naar de nieuwste inspirerende verhalen</p>
+            </div>
+            
+            <div class="episodes-grid">
+                <div class="episode-card">
+                    <div class="episode-image">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="episode-duration">45 min</div>
+                    </div>
+                    <div class="episode-content">
+                        <h3 class="episode-title">Van €0 naar €1M in 2 jaar</h3>
+                        <p class="episode-description">
+                            Hoe Sarah haar online marketing bureau opbouwde vanuit haar studentenkamer
+                        </p>
+                        <div class="episode-meta">
+                            <span class="episode-guest">Met: Sarah van der Berg</span>
+                            <span class="episode-date">5 jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episode-card">
+                    <div class="episode-image">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="episode-duration">52 min</div>
+                    </div>
+                    <div class="episode-content">
+                        <h3 class="episode-title">De Mindset van Succes</h3>
+                        <p class="episode-description">
+                            Waarom 90% van de ondernemers faalt en hoe jij bij de 10% kunt horen
+                        </p>
+                        <div class="episode-meta">
+                            <span class="episode-guest">Met: Mark Ruijter</span>
+                            <span class="episode-date">28 dec 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="episode-card">
+                    <div class="episode-image">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="episode-duration">38 min</div>
+                    </div>
+                    <div class="episode-content">
+                        <h3 class="episode-title">Internationale Expansie</h3>
+                        <p class="episode-description">
+                            Van Nederlandse startup naar wereldwijd opererende organisatie
+                        </p>
+                        <div class="episode-meta">
+                            <span class="episode-guest">Met: Lisa Chen</span>
+                            <span class="episode-date">21 dec 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="episodes-cta">
+                                    <a href="#" class="btn btn-primary">Bekijk Alle Episodes</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Onze Partners</h2>
+                <p class="section-subtitle">Samen bouwen we aan een sterkere ondernemersecosysteem</p>
+            </div>
+            
+            <div class="partners-carousel-container">
+                <div class="partners-carousel">
+                    <div class="partner-logo">DigitalFirst</div>
+                    <div class="partner-logo">GrowthLab</div>
+                    <div class="partner-logo">ConnectPro</div>
+                    <div class="partner-logo">NetwerkNL</div>
+                    <div class="partner-logo">FutureTech</div>
+                    <div class="partner-logo">TechVision</div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-logo">DigitalFirst</div>
+                    <div class="partner-logo">GrowthLab</div>
+                    <div class="partner-logo">ConnectPro</div>
+                    <div class="partner-logo">NetwerkNL</div>
+                    <div class="partner-logo">FutureTech</div>
+                    <div class="partner-logo">TechVision</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abdul Antonio Section -->
+    <section id="abdul" class="abdul-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Abdul Antonio</h2>
+                <p class="abdul-tagline">"Van beginnen met niets naar een Miljoen"</p>
+            </div>
+            
+            <div class="abdul-content">
+                <div class="abdul-profile">
+                    <div class="profile-image">
+                        <img src="assets/Profiel foto Abdul Antonio.jpeg" alt="Abdul Antonio" />
+                    </div>
+                </div>
+                
+                <div class="abdul-biography glass-layer glass-layer-premium metallic-shine">
+                    <div class="glass-layer-content">
+                        <div class="bio-header">
+                            <h3 class="bio-title">Biografie van Abdul Antonio</h3>
+                        <div class="bio-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1986</span>
+                                <span class="stat-label">Geboren</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">€1M+</span>
+                                <span class="stat-label">Omzet</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Bedrijven</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                            <div class="bio-content">
+                            <div class="bio-preview">
+                                                        <p>
+                            Met minimale middelen leerde ik met geduld muziekvideo's maken – zelfs als dat betekende dat ik dezelfde video twintig keer moest renderen om het gewenste resultaat te behalen. Het lukte. Later begon ik waar ik jarenlang van had gedroomd: Studio Antonio.
+                        </p>
+                                
+                                <p>
+                                    Ik ben Abdul Antonio, geboren op Curaçao in 1986. In 1988 verhuisde ik samen met mijn moeder, mijn twee zussen en mijn broer naar Nederland...
+                                </p>
+                            </div>
+                        
+                        <div class="bio-full" id="bio-full">
+                            <p>
+                                Ik ben Abdul Antonio, geboren op Curaçao in 1986. In 1988 verhuisde ik samen met mijn moeder, mijn twee zussen en mijn broer naar Nederland. Mijn vader kwam rond mijn achtste even terug in mijn leven, maar verdween al snel weer toen ik ongeveer tien jaar was. Dat waren vormende jaren: ik voelde me vaak onveilig en werd introvert, maar juist in die periode ontwikkelde ik een enorme innerlijke kracht en doorzettingsvermogen.
+                            </p>
+                            
+                            <p>
+                                Ondanks deze uitdagingen had ik al vroeg een onbegrensde drang om te creëren. Met minimale middelen startte ik Studio Antonio, mijn eerste onderneming in videografie. Een trage computer en lange render-tijden weerhielden me er niet van om mijn passie na te jagen en groter te dromen. In deze tijd leerde ik dat visualiseren en doorzetten onmisbare sleutels zijn voor groei.
+                            </p>
+                            
+                            <p>
+                                Die mentaliteit bracht me later bij Business Security, waar ik een professioneel team wist op te bouwen en een omzet van ruim een miljoen realiseerde.
+                            </p>
+                            
+                            <p>
+                                Mijn inspiratie vond ik bij grootheden zoals Bob Proctor, Esther van Abraham-Hicks, Tony Robbins en Joe Dispenza. Zij hebben me geleerd dat persoonlijke ontwikkeling en mindset de basis vormen voor elke doorbraak. Vandaag de dag is mijn missie niet alleen om te ondernemen, maar ook om anderen te inspireren hun volledige potentieel te omarmen en de kracht van veerkracht, discipline en dankbaarheid te ontdekken.
+                            </p>
+                            
+                            <p>
+                                Mijn verhaal is een getuigenis: waar je ook begint, hoe diep je ook zakt – alles kan anders worden als je besluit om door te zetten.
+                            </p>
+                        </div>
+                        
+                        <button class="read-more-btn" onclick="toggleBiography()" id="read-more-btn">
+                            <span class="btn-text">Lees meer</span>
+                            <i class="fas fa-chevron-down btn-icon"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Component Section -->
+    <section class="accordion-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">In Ons Netwerk</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+                         <!-- Reusable Accordion Component -->
+             <div class="accordion-container max-w-6xl mx-auto">
+                 
+                 <!-- Search Bar -->
+                 <div class="search-container mb-6">
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                         <!-- Basic Search -->
+                         <div class="relative">
+                             <input type="text" 
+                                    id="entrepreneur-search" 
+                                    placeholder="Zoek ondernemers..." 
+                                    class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700 placeholder-gray-500"
+                                    >
+                             <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                         </div>
+                         
+                         <!-- Advanced Search -->
+                         <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                             <select id="province-filter" class="px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700">
+                                 <option value="">Alle provincies</option>
+                                 <option value="Noord-Holland">Noord-Holland</option>
+                                 <option value="Zuid-Holland">Zuid-Holland</option>
+                                 <option value="Utrecht">Utrecht</option>
+                                 <option value="Gelderland">Gelderland</option>
+                                 <option value="Noord-Brabant">Noord-Brabant</option>
+                                 <option value="Limburg">Limburg</option>
+                                 <option value="Overijssel">Overijssel</option>
+                                 <option value="Drenthe">Drenthe</option>
+                                 <option value="Groningen">Groningen</option>
+                                 <option value="Friesland">Friesland</option>
+                                 <option value="Flevoland">Flevoland</option>
+                                 <option value="Zeeland">Zeeland</option>
+                             </select>
+                             
+                             <input type="text" 
+                                    id="city-filter" 
+                                    placeholder="Stad..." 
+                                    class="px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700 placeholder-gray-500">
+                             
+                             <div class="relative">
+                                 <input type="number" 
+                                        id="distance-filter" 
+                                        placeholder="Afstand (km)" 
+                                        min="0" 
+                                        max="1000"
+                                        class="w-full px-3 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700 placeholder-gray-500">
+                                 <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 text-sm">km</span>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     <div class="search-stats mt-2 text-sm text-gray-600">
+                         <span id="search-results-count">0</span> resultaten gevonden
+                     </div>
+                 </div>
+                                              <!-- Mentoren Category -->
+                              <div class="accordion-item mb-4 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                                  <button class="accordion-header w-full px-6 py-4 bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 transition-all duration-300 flex items-center justify-between text-left" onclick="toggleAccordion('mentoren')">
+                                      <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                                          <i class="fas fa-users mr-3 text-blue-600"></i>
+                                          Mentoren
+                                      </h3>
+                                      <i class="fas fa-chevron-down accordion-icon text-blue-600 transition-transform duration-300" id="mentoren-icon"></i>
+                                  </button>
+                                         <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out" id="mentoren-content">
+                         <div class="px-6 py-4 bg-white">
+                                                                       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 entrepreneur-grid" data-category="mentoren">
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Sarah Johnson" 
+                                      data-profession="Business Coach & Strategist" 
+                                      data-location="Amsterdam" 
+                                      data-city="Amsterdam"
+                                      data-province="Noord-Holland"
+                                      data-distance="0"
+                                      data-specialty="Strategy">
+                                     <h4 class="font-medium text-gray-800 mb-2">Sarah Johnson</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Business Coach & Strategist</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Amsterdam, Noord-Holland</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Michael Chen" 
+                                      data-profession="Life Coach & Motivational Speaker" 
+                                      data-location="Rotterdam" 
+                                      data-city="Rotterdam"
+                                      data-province="Zuid-Holland"
+                                      data-distance="50"
+                                      data-specialty="Motivation">
+                                     <h4 class="font-medium text-gray-800 mb-2">Michael Chen</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Life Coach & Motivational Speaker</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Rotterdam, Zuid-Holland</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Emma Rodriguez" 
+                                      data-profession="Career Coach & Leadership Expert" 
+                                      data-location="Utrecht" 
+                                      data-city="Utrecht"
+                                      data-province="Utrecht"
+                                      data-distance="30"
+                                      data-specialty="Leadership">
+                                     <h4 class="font-medium text-gray-800 mb-2">Emma Rodriguez</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Career Coach & Leadership Expert</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Utrecht, Utrecht</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="David Wilson" 
+                                      data-profession="Executive Coach" 
+                                      data-location="Den Haag" 
+                                      data-city="Den Haag"
+                                      data-province="Zuid-Holland"
+                                      data-distance="40"
+                                      data-specialty="Executive">
+                                     <h4 class="font-medium text-gray-800 mb-2">David Wilson</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Executive Coach</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Den Haag, Zuid-Holland</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Lisa van der Berg" 
+                                      data-profession="Mindset Coach" 
+                                      data-location="Eindhoven" 
+                                      data-city="Eindhoven"
+                                      data-province="Noord-Brabant"
+                                      data-distance="80"
+                                      data-specialty="Mindset">
+                                     <h4 class="font-medium text-gray-800 mb-2">Lisa van der Berg</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Mindset Coach</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Eindhoven, Noord-Brabant</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Tom Bakker" 
+                                      data-profession="Business Strategy Coach" 
+                                      data-location="Groningen" 
+                                      data-city="Groningen"
+                                      data-province="Groningen"
+                                      data-distance="150"
+                                      data-specialty="Strategy">
+                                     <h4 class="font-medium text-gray-800 mb-2">Tom Bakker</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Business Strategy Coach</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Groningen, Groningen</p>
+                                     <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+
+                                              <!-- Pioneers Category -->
+                              <div class="accordion-item mb-4 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                                  <button class="accordion-header w-full px-6 py-4 bg-gradient-to-r from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 transition-all duration-300 flex items-center justify-between text-left" onclick="toggleAccordion('pioneers')">
+                                      <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                                          <i class="fas fa-heart mr-3 text-green-600"></i>
+                                          Pioneers
+                                      </h3>
+                                      <i class="fas fa-chevron-down accordion-icon text-green-600 transition-transform duration-300" id="pioneers-icon"></i>
+                                  </button>
+                                                                                                             <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out" id="pioneers-content">
+                         <div class="px-6 py-4 bg-white">
+                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 entrepreneur-grid" data-category="pioneers">
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Dr. Lisa van der Berg" 
+                                      data-profession="Psycholoog & Trauma Specialist" 
+                                      data-location="Amsterdam" 
+                                      data-city="Amsterdam"
+                                      data-province="Noord-Holland"
+                                      data-distance="0"
+                                      data-specialty="Trauma">
+                                     <h4 class="font-medium text-gray-800 mb-2">Dr. Lisa van der Berg</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Psycholoog & Trauma Specialist</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Amsterdam, Noord-Holland</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Mark de Vries" 
+                                      data-profession="Maatschappelijk Werker" 
+                                      data-location="Rotterdam" 
+                                      data-city="Rotterdam"
+                                      data-province="Zuid-Holland"
+                                      data-distance="50"
+                                      data-specialty="Social Work">
+                                     <h4 class="font-medium text-gray-800 mb-2">Mark de Vries</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Maatschappelijk Werker</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Rotterdam, Zuid-Holland</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Anna Kowalski" 
+                                      data-profession="Gezinstherapeut" 
+                                      data-location="Utrecht" 
+                                      data-city="Utrecht"
+                                      data-province="Utrecht"
+                                      data-distance="30"
+                                      data-specialty="Family Therapy">
+                                     <h4 class="font-medium text-gray-800 mb-2">Anna Kowalski</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Gezinstherapeut</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Utrecht, Utrecht</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Dr. Peter Jansen" 
+                                      data-profession="Klinisch Psycholoog" 
+                                      data-location="Den Haag" 
+                                      data-city="Den Haag"
+                                      data-province="Zuid-Holland"
+                                      data-distance="40"
+                                      data-specialty="Clinical">
+                                     <h4 class="font-medium text-gray-800 mb-2">Dr. Peter Jansen</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Klinisch Psycholoog</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Den Haag, Zuid-Holland</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Maria Santos" 
+                                      data-profession="Sociaal Werker" 
+                                      data-location="Eindhoven" 
+                                      data-city="Eindhoven"
+                                      data-province="Noord-Brabant"
+                                      data-distance="80"
+                                      data-specialty="Social Work">
+                                     <h4 class="font-medium text-gray-800 mb-2">Maria Santos</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Sociaal Werker</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Eindhoven, Noord-Brabant</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Thomas Müller" 
+                                      data-profession="Psychotherapeut" 
+                                      data-location="Groningen" 
+                                      data-city="Groningen"
+                                      data-province="Groningen"
+                                      data-distance="150"
+                                      data-specialty="Psychotherapy">
+                                     <h4 class="font-medium text-gray-800 mb-2">Thomas Müller</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Psychotherapeut</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Groningen, Groningen</p>
+                                     <a href="#" class="text-green-600 hover:text-green-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+
+                                              <!-- Motivators Category -->
+                              <div class="accordion-item mb-4 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                                  <button class="accordion-header w-full px-6 py-4 bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 transition-all duration-300 flex items-center justify-between text-left" onclick="toggleAccordion('motivators')">
+                                      <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                                          <i class="fas fa-stethoscope mr-3 text-purple-600"></i>
+                                          Motivators
+                                      </h3>
+                                      <i class="fas fa-chevron-down accordion-icon text-purple-600 transition-transform duration-300" id="motivators-icon"></i>
+                                  </button>
+                                                                                                             <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out" id="motivators-content">
+                         <div class="px-6 py-4 bg-white">
+                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 entrepreneur-grid" data-category="motivators">
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Dr. Peter Jansen" 
+                                      data-profession="Fysiotherapeut & Sport Specialist" 
+                                      data-location="Amsterdam" 
+                                      data-city="Amsterdam"
+                                      data-province="Noord-Holland"
+                                      data-distance="0"
+                                      data-specialty="Sports">
+                                     <h4 class="font-medium text-gray-800 mb-2">Dr. Peter Jansen</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Fysiotherapeut & Sport Specialist</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Amsterdam, Noord-Holland</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Maria Santos" 
+                                      data-profession="Ergotherapeut" 
+                                      data-location="Rotterdam" 
+                                      data-city="Rotterdam"
+                                      data-province="Zuid-Holland"
+                                      data-distance="50"
+                                      data-specialty="Occupational">
+                                     <h4 class="font-medium text-gray-800 mb-2">Maria Santos</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Ergotherapeut</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Rotterdam, Zuid-Holland</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Thomas Müller" 
+                                      data-profession="Logopedist" 
+                                      data-location="Utrecht" 
+                                      data-city="Utrecht"
+                                      data-province="Utrecht"
+                                      data-distance="30"
+                                      data-specialty="Speech">
+                                     <h4 class="font-medium text-gray-800 mb-2">Thomas Müller</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Logopedist</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Utrecht, Utrecht</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Dr. Sarah van der Berg" 
+                                      data-profession="Orthopedisch Fysiotherapeut" 
+                                      data-location="Den Haag" 
+                                      data-city="Den Haag"
+                                      data-province="Zuid-Holland"
+                                      data-distance="40"
+                                      data-specialty="Orthopedic">
+                                     <h4 class="font-medium text-gray-800 mb-2">Dr. Sarah van der Berg</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Orthopedisch Fysiotherapeut</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Den Haag, Zuid-Holland</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Mark de Vries" 
+                                      data-profession="Sportpsycholoog" 
+                                      data-location="Eindhoven" 
+                                      data-city="Eindhoven"
+                                      data-province="Noord-Brabant"
+                                      data-distance="80"
+                                      data-specialty="Sports Psychology">
+                                     <h4 class="font-medium text-gray-800 mb-2">Mark de Vries</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Sportpsycholoog</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Eindhoven, Noord-Brabant</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                                 <div class="partner-card p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow entrepreneur-item" 
+                                      data-name="Lisa Chen" 
+                                      data-profession="Revalidatie Specialist" 
+                                      data-location="Groningen" 
+                                      data-city="Groningen"
+                                      data-province="Groningen"
+                                      data-distance="150"
+                                      data-specialty="Rehabilitation">
+                                     <h4 class="font-medium text-gray-800 mb-2">Lisa Chen</h4>
+                                     <p class="text-sm text-gray-600 mb-3">Revalidatie Specialist</p>
+                                     <p class="text-xs text-gray-500 mb-2">📍 Groningen, Groningen</p>
+                                     <a href="#" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Bezoek website →</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SuperKonnected</h3>
+                    <p>Van netwerken naar verbinden</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Podcast</h4>
+                        <a href="#episodes">Laatste Episodes</a>
+                        <a href="#about">Over Ons</a>
+                        <a href="#community">Community</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Business</h4>
+                        <a href="#sponsors">Sponsoring</a>
+                        <a href="#partners">Partners</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Volg Ons</h4>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Spotify</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SuperKonnected. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+                    <!-- JavaScript -->
+                <script src="entrepreneurs-data.js"></script>
+                <script src="script.js"></script>
+    <script src="scroll-animations.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/21647323/README.md)
 # SuperKonnected Website
 
 Een moderne, responsive website voor de SuperKonnected podcast en community. Deze website toont inspirerende verhalen van ondernemers die van niets naar succes zijn gegaan, gepresenteerd door Abdul Antonio.

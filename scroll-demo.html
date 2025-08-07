@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animations Demo - SuperKonnected</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scroll-animations.css">
+    
+    <style>
+        .demo-section {
+            padding: 4rem 0;
+            min-height: 100vh;
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-orange) 100%);
+            color: white;
+        }
+        
+        .demo-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1000;
+        }
+        
+        .demo-btn {
+            background: var(--primary-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            margin: 0.2rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            display: block;
+            width: 100%;
+        }
+        
+        .demo-btn:hover {
+            background: #ff7a47;
+        }
+        
+        .demo-spacer {
+            height: 150vh;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--gray-600);
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body class="debug-scroll">
+    <div class="demo-controls">
+        <h4 style="color: white; margin-bottom: 1rem;">🎬 Demo Controls</h4>
+        <button class="demo-btn" onclick="scrollToSection('stats')">Scroll naar Stats</button>
+        <button class="demo-btn" onclick="scrollToSection('pillars')">Scroll naar Pillars</button>
+        <button class="demo-btn" onclick="scrollToSection('platforms')">Scroll naar Platforms</button>
+        <button class="demo-btn" onclick="scrollToSection('pricing')">Scroll naar Pricing</button>
+        <button class="demo-btn" onclick="resetAnimations()">Reset Alle Animaties</button>
+        <button class="demo-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Terug naar Top</button>
+    </div>
+
+    <div class="demo-header">
+        <div class="container">
+            <h1>🚀 Scroll Animations Demo</h1>
+            <p>Scroll naar beneden om de moderne kaart-animaties te zien</p>
+            <p><strong>Verschillende animatie richtingen:</strong> Links, Rechts, Boven, Fade-Scale</p>
+        </div>
+    </div>
+    
+    <div class="demo-spacer">
+        <div class="container">
+            <p>👇 Scroll naar beneden om de eerste animaties te zien</p>
+        </div>
+    </div>
+
+    <!-- Stats Section Demo -->
+    <section id="stats" class="demo-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">📊 Stat Cards (Links & Rechts)</h2>
+            <div class="demo-grid">
+                <div class="stat-card glass-layer glass-layer-orange">
+                    <div class="glass-layer-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Slide Left</h4>
+                            <p>Van links naar binnen</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card glass-layer glass-layer-blue">
+                    <div class="glass-layer-content">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Slide Right</h4>
+                            <p>Van rechts naar binnen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="demo-spacer">
+        <div class="container">
+            <p>👇 Volgende sectie: Pillar Cards</p>
+        </div>
+    </div>
+
+    <!-- Pillars Section Demo -->
+    <section id="pillars" class="demo-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">🏛️ Pillar Cards (Links, Midden, Rechts)</h2>
+            <div class="demo-grid">
+                <div class="pillar-card glass-layer glass-layer-orange">
+                    <div class="glass-layer-content">
+                        <div class="pillar-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Slide Left</h3>
+                        <p>Eerste pillar vliegt van links naar binnen</p>
+                    </div>
+                </div>
+                
+                <div class="pillar-card glass-layer glass-layer-premium">
+                    <div class="glass-layer-content">
+                        <div class="pillar-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Slide Up</h3>
+                        <p>Middelste pillar vliegt van onder naar boven</p>
+                    </div>
+                </div>
+                
+                <div class="pillar-card glass-layer glass-layer-blue">
+                    <div class="glass-layer-content">
+                        <div class="pillar-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Slide Right</h3>
+                        <p>Laatste pillar vliegt van rechts naar binnen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="demo-spacer">
+        <div class="container">
+            <p>👇 Volgende sectie: Platform Cards</p>
+        </div>
+    </div>
+
+    <!-- Platforms Section Demo -->
+    <section id="platforms" class="demo-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">📱 Platform Cards (Gecoördineerde Entrance)</h2>
+            <div class="demo-grid">
+                <div class="platform-card glass-layer glass-layer-blue">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>Slide van links</p>
+                        <a href="#" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+                
+                <div class="platform-card glass-layer glass-layer-orange">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <h3>Spotify</h3>
+                        <p>Slide van onder</p>
+                        <a href="#" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+                
+                <div class="platform-card glass-layer glass-layer-premium">
+                    <div class="glass-layer-content">
+                        <div class="platform-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>YouTube</h3>
+                        <p>Slide van rechts</p>
+                        <a href="#" class="platform-btn">Volg ons →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="demo-spacer">
+        <div class="container">
+            <p>👇 Volgende sectie: Pricing Cards</p>
+        </div>
+    </div>
+
+    <!-- Pricing Section Demo -->
+    <section id="pricing" class="demo-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">💰 Pricing Cards (Mixed Animations)</h2>
+            <div class="demo-grid">
+                <div class="pricing-card glass-layer glass-layer-orange">
+                    <div class="glass-layer-content">
+                        <div class="card-icon">
+                            <i class="fas fa-euro-sign"></i>
+                        </div>
+                        <h3 class="card-title">Basis</h3>
+                        <div class="card-price">
+                            <span class="price">€500</span><span class="period">/maand</span>
+                        </div>
+                        <button class="pricing-btn">Slide Left</button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card premium-card glass-layer glass-layer-premium">
+                    <div class="glass-layer-content">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="card-title">Premium</h3>
+                        <div class="card-price">
+                            <span class="price">€1.500</span><span class="period">/maand</span>
+                        </div>
+                        <button class="pricing-btn">Fade & Scale</button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card glass-layer glass-layer-blue">
+                    <div class="glass-layer-content">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Events</h3>
+                        <div class="card-price">
+                            <span class="price">Op maat</span><span class="period">/project</span>
+                        </div>
+                        <button class="pricing-btn">Slide Right</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="demo-spacer">
+        <div class="container" style="text-align: center;">
+            <h3>🎉 Demo voltooid!</h3>
+            <p>Gebruik de controls rechtsboven om animaties opnieuw af te spelen</p>
+            <button class="demo-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="display: inline-block; margin-top: 1rem;">
+                Terug naar boven
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="scroll-animations.js"></script>
+    
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+        
+        function resetAnimations() {
+            if (window.scrollAnimations) {
+                window.scrollAnimations.resetAll();
+                alert('🔄 Alle animaties zijn gereset! Scroll opnieuw om ze te zien.');
+            }
+        }
+        
+        // Log wanneer animaties geladen zijn
+        document.addEventListener('DOMContentLoaded', () => {
+            console.info('🎬 Scroll animations demo geladen!');
+            console.info('Scroll naar beneden om animaties te zien, of gebruik de controls rechtsboven.');
+        });
+    </script>
+</body>
+</html>
