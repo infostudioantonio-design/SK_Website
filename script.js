@@ -715,15 +715,11 @@ function performSearch(searchTerm, province = '', city = '', distance = '') {
 function autoOpenRelevantSections(searchTerm) {
     if (!searchTerm) return;
     
-    const categories = ['mentoren', 'pioneers', 'motivators'];
+    const categories = ['coaches', 'pioneers', 'motivators'];
     
     categories.forEach(category => {
         const content = document.getElementById(`${category}-content`);
-        if (!content) return;
-        
         const grid = content.querySelector('.entrepreneur-grid');
-        if (!grid) return;
-        
         const visibleItems = grid.querySelectorAll('.entrepreneur-item[style*="display: block"]');
         
         if (visibleItems.length > 0) {
@@ -948,14 +944,12 @@ function trackPerformanceMetrics() {
 function hideLoadingScreen() {
     const loadingScreen = document.getElementById('loading-screen');
     if (loadingScreen) {
-        // Wait for a minimum time to show loading screen
+        // Hide loading screen immediately when page is ready
+        loadingScreen.classList.add('hidden');
+        // Remove from DOM after animation
         setTimeout(() => {
-            loadingScreen.classList.add('hidden');
-            // Remove from DOM after animation
-            setTimeout(() => {
-                loadingScreen.remove();
-            }, 500);
-        }, 1000);
+            loadingScreen.remove();
+        }, 300);
     }
 }
 
