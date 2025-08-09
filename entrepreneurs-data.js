@@ -11,8 +11,8 @@ const entrepreneursData = {
             province: "Noord-Holland",
             distance: 0,
             specialty: "Strategy",
-            website: "https://sarahjohnson.com",
-            email: "sarah@sarahjohnson.com",
+            website: "https://sarahjohnson.nl",
+            email: "sarah@sarahjohnson.nl",
             phone: "+31 6 12345678",
             experience: "15+ years",
             languages: ["Nederlands", "Engels"],
@@ -143,7 +143,7 @@ function generateRandomEntrepreneurs(category, count = 100) {
         let profession, specialty;
         
         switch(category) {
-            case 'mentoren':
+            case 'coaches':
                 const coachProfessions = [
                     "Business Coach", "Life Coach", "Career Coach", "Executive Coach", "Mindset Coach",
                     "Strategy Coach", "Leadership Coach", "Performance Coach", "Wellness Coach", "Success Coach"
@@ -202,7 +202,7 @@ function generateRandomEntrepreneurs(category, count = 100) {
 function loadEntrepreneursIntoAccordion() {
     // Generate 1000+ entrepreneurs (100 per category for demo)
     const allEntrepreneurs = {
-        mentoren: generateRandomEntrepreneurs('mentoren', 100),
+        coaches: generateRandomEntrepreneurs('coaches', 100),
         pioneers: generateRandomEntrepreneurs('pioneers', 100),
         motivators: generateRandomEntrepreneurs('motivators', 100)
     };
@@ -240,7 +240,7 @@ function createEntrepreneurCard(entrepreneur, category) {
     card.setAttribute('data-city', entrepreneur.city);
     card.setAttribute('data-distance', entrepreneur.distance);
     
-    const colorClass = category === 'mentoren' ? 'text-blue-600 hover:text-blue-800' : 
+    const colorClass = category === 'coaches' ? 'text-blue-600 hover:text-blue-800' : 
                       category === 'pioneers' ? 'text-green-600 hover:text-green-800' : 
                       'text-purple-600 hover:text-purple-800';
     
