@@ -1,0 +1,14 @@
+{
+    "backupSettings": {
+        "intervalMinutes": 10,
+        "maxBackups": 20,
+        "sourcePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected_Files\\Super connected_website\\SK_Website\\05-08 Website SK",
+        "backupBasePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected_Files\\Super connected_website\\SK_Website\\05-08 Website SK - Backup"
+    },
+    "description": {
+        "intervalMinutes": "Hoe vaak backup maken (in minuten)",
+        "maxBackups": "Maximum aantal backups bewaren",
+        "sourcePath": "Pad naar je project folder",
+        "backupBasePath": "Pad waar backups worden opgeslagen"
+    }
+}

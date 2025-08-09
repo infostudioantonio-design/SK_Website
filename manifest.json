@@ -1,0 +1,33 @@
+{
+    "name": "SuperKonnected",
+    "short_name": "SuperKonnected",
+    "description": "Van netwerken naar verbinden - Inspirerende verhalen van ondernemers",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A2342",
+    "theme_color": "#0A2342",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assets/superKonnected Logo svg.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/superKonnected Logo svg.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/superKonnected Logo svg.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+        }
+    ],
+    "categories": ["business", "education", "entertainment"],
+    "lang": "nl",
+    "dir": "ltr"
+} 
