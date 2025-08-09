@@ -2,7 +2,7 @@
     "name": "SuperKonnected",
     "short_name": "SuperKonnected",
     "description": "Van netwerken naar verbinden - Inspirerende verhalen van ondernemers",
-    "start_url": "/",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#0A2342",
     "theme_color": "#0A2342",
