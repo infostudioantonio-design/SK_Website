@@ -1,14 +1,14 @@
 // Service Worker voor SuperKonnected
 const CACHE_NAME = 'superkonnected-v1.0.0';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/script.js',
-    '/scroll-animations.css',
-    '/scroll-animations.js',
-    '/entrepreneurs-data.js',
-    '/assets/superKonnected Logo svg.svg'
+    './',
+    './index.html',
+    './styles.css',
+    './script.js',
+    './scroll-animations.css',
+    './scroll-animations.js',
+    './entrepreneurs-data.js',
+    './assets/superKonnected Logo svg.svg'
 ];
 
 // Install event - cache resources
