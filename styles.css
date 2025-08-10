@@ -57,6 +57,14 @@ body {
     color: var(--gray-700);
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    max-width: 100vw;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 /* Dark Mode Variables */
@@ -374,10 +382,6 @@ body {
 @keyframes progressBar {
     0% { width: 0%; }
     100% { width: 100%; }
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /* Container */
@@ -2537,10 +2541,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .section-title {
         font-size: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .nav-menu {
@@ -2738,10 +2746,14 @@ h1, h2, h3, h4, h5, h6 {
     /* Sponsoring Section Mobile */
     .sponsoring-header {
         margin-bottom: 3rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .sponsoring-header .section-title {
         font-size: 2.25rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .title-underline {
@@ -2753,11 +2765,16 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
         gap: 2rem;
         margin-bottom: 2rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     .pricing-card {
         padding: 2rem 1.5rem;
         min-height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     .premium-card {
@@ -2777,6 +2794,8 @@ h1, h2, h3, h4, h5, h6 {
     
     .card-title {
         font-size: 1.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .card-price .price {
@@ -2786,6 +2805,8 @@ h1, h2, h3, h4, h5, h6 {
     .pricing-btn {
         padding: 0.875rem 1.5rem;
         font-size: 0.95rem;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .btn-sponsor {
@@ -2890,6 +2911,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .stat-number {
@@ -2911,25 +2934,32 @@ h1, h2, h3, h4, h5, h6 {
     .profile-image {
         width: 220px;
         height: 220px;
+        max-width: 100%;
     }
     
     .abdul-biography {
         padding: 1.5rem;
         border-radius: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .bio-header {
         gap: 1rem;
         margin-bottom: 1.5rem;
+        max-width: 100%;
     }
     
     .bio-stats {
         gap: 0.75rem;
+        max-width: 100%;
     }
     
     .stat-item {
         padding: 0.5rem 0.75rem;
         min-width: 70px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .stat-number {
@@ -2938,15 +2968,21 @@ h1, h2, h3, h4, h5, h6 {
     
     .stat-label {
         font-size: 0.65rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .bio-title {
         font-size: 1.25rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .read-more-btn {
         padding: 0.75rem 1.25rem;
         font-size: 0.85rem;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
