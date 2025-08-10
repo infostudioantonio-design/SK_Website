@@ -1,5 +1,5 @@
 // Service Worker voor SuperKonnected
-const CACHE_NAME = 'superkonnected-nl-v1.0.1';
+const CACHE_NAME = 'superkonnected-v1.0.0';
 const urlsToCache = [
     '/',
     '/index.html',
