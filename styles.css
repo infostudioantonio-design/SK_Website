@@ -2295,7 +2295,8 @@ h1, h2, h3, h4, h5, h6 {
         0 0 0 1px rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    margin-bottom: 2rem;
 }
 
 .abdul-biography::before {
@@ -2388,7 +2389,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bio-full.expanded {
-    max-height: 1000px;
+    max-height: 2000px;
 }
 
 .bio-preview p:last-child {
@@ -4629,6 +4630,8 @@ h1, h2, h3, h4, h5, h6 {
     /* Mobile Biography */
     .abdul-biography {
         padding: 1.5rem;
+        overflow: visible;
+        margin-bottom: 2rem;
     }
     
     .bio-title {
