@@ -2,8 +2,8 @@
     "backupSettings": {
         "intervalMinutes": 10,
         "maxBackups": 20,
-        "sourcePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected_Files\\Super connected_website\\SK_Website\\05-08 Website SK",
-        "backupBasePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected_Files\\Super connected_website\\SK_Website\\05-08 Website SK - Backup"
+        "sourcePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected Website\\SK_restore_point_2025-08-10_05-15-45",
+        "backupBasePath": "C:\\Users\\SKIKK\\Desktop\\SuperKonnected Website\\SK_RESTORE_POINT_2025-08-11_01-40"
     },
     "description": {
         "intervalMinutes": "Hoe vaak backup maken (in minuten)",

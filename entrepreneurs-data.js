@@ -18,7 +18,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Engels"],
             rating: 4.8,
             clients: 150,
-            photo: "assets/entrepreneurs/sarah-johnson.jpg", // ← NIEUW: Foto pad
+            photo: "assets/superKonnected Logo svg.svg", // ← Placeholder: Logo als foto
             linkedin: "https://linkedin.com/in/sarahjohnson" // ← NIEUW: LinkedIn URL
         },
         {
@@ -36,7 +36,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Engels", "Mandarijn"],
             rating: 4.9,
             clients: 200,
-            photo: "assets/entrepreneurs/michael-chen.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/michaelchen"
         },
         {
@@ -54,7 +54,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Frans", "Engels", "Spaans"],
             rating: 4.8,
             clients: 180,
-            photo: "assets/entrepreneurs/emma-rodriguez.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/emmarodriguez"
         },
         {
@@ -72,7 +72,7 @@ const entrepreneursData = {
             languages: ["Engels", "Frans"],
             rating: 4.9,
             clients: 250,
-            photo: "assets/entrepreneurs/david-wilson.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/davidwilson"
         },
         {
@@ -90,7 +90,7 @@ const entrepreneursData = {
             languages: ["Duits", "Engels", "Nederlands"],
             rating: 4.7,
             clients: 160,
-            photo: "assets/entrepreneurs/lisa-vanderberg.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/lisavanderberg"
         },
         {
@@ -108,7 +108,7 @@ const entrepreneursData = {
             languages: ["Frans", "Engels", "Nederlands"],
             rating: 4.8,
             clients: 220,
-            photo: "assets/entrepreneurs/tom-bakker.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/tombakker"
         },
         // Add 100+ more coaches here...
@@ -130,7 +130,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Engels"],
             rating: 4.7,
             clients: 300,
-            photo: "assets/entrepreneurs/lisa-vanderberg.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/lisavanderberg"
         },
         {
@@ -148,7 +148,7 @@ const entrepreneursData = {
             languages: ["Nederlands"],
             rating: 4.6,
             clients: 250,
-            photo: "assets/entrepreneurs/mark-devries.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/markdevries"
         },
         {
@@ -166,7 +166,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Frans", "Engels"],
             rating: 4.7,
             clients: 280,
-            photo: "assets/entrepreneurs/sophie-dubois.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/sophiedubois"
         },
         {
@@ -184,7 +184,7 @@ const entrepreneursData = {
             languages: ["Duits", "Engels"],
             rating: 4.5,
             clients: 200,
-            photo: "assets/entrepreneurs/hans-mueller.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/hansmueller"
         },
         // Add 100+ more pioneers here...
@@ -206,7 +206,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Engels"],
             rating: 4.8,
             clients: 400,
-            photo: "assets/entrepreneurs/peter-jansen.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/peterjansen"
         },
         {
@@ -224,7 +224,7 @@ const entrepreneursData = {
             languages: ["Nederlands", "Engels", "Spaans"],
             rating: 4.9,
             clients: 350,
-            photo: "assets/entrepreneurs/maria-santos.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/mariasantos"
         },
         {
@@ -242,7 +242,7 @@ const entrepreneursData = {
             languages: ["Frans", "Engels", "Duits"],
             rating: 4.8,
             clients: 420,
-            photo: "assets/entrepreneurs/pierre-laurent.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/pierrelaurent"
         },
         {
@@ -260,7 +260,7 @@ const entrepreneursData = {
             languages: ["Engels", "Frans"],
             rating: 4.7,
             clients: 300,
-            photo: "assets/entrepreneurs/sarah-thompson.jpg",
+            photo: "assets/superKonnected Logo svg.svg",
             linkedin: "https://linkedin.com/in/sarahthompson"
         }
         // Add 100+ more motivators here...
@@ -436,7 +436,7 @@ function generateRandomEntrepreneurs(category, count = 100) {
             languages: ["Nederlands", "Engels"],
             rating: (4 + Math.random() * 0.9).toFixed(1),
             clients: Math.floor(Math.random() * 500) + 50,
-            photo: `assets/entrepreneurs/${firstName.toLowerCase()}-${lastName.toLowerCase().replace(' ', '')}.jpg`, // ← NIEUW: Foto pad
+            photo: "assets/superKonnected Logo svg.svg", // ← Placeholder: Logo als foto
             linkedin: `https://linkedin.com/in/${firstName.toLowerCase()}${lastName.toLowerCase().replace(' ', '')}` // ← NIEUW: LinkedIn URL
         });
     }

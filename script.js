@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize Request Cards
     initRequestCards();
+    
+
 });
 
 // Mobile Menu Toggle
@@ -67,10 +69,13 @@ function initMobileMenu() {
     if (mobileToggle && navMenu) {
         mobileToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-times');
+            mobileToggle.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
             }
         });
         
@@ -79,12 +84,27 @@ function initMobileMenu() {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
-                const icon = mobileToggle.querySelector('i');
-                if (icon) {
-                    icon.classList.add('fa-bars');
-                    icon.classList.remove('fa-times');
-                }
+                mobileToggle.classList.remove('active');
+                document.body.style.overflow = '';
             });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     }
 }
@@ -1493,6 +1513,8 @@ function joinLiveQA() {
     );
     closeCommunityModal();
 }
+
+
 
 
 
