@@ -1,0 +1,34 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "src/**",
+      "public/**",
+      "package.json",
+      "package-lock.json",
+      "tsconfig.json",
+      "tailwind.config.js",
+      "*.md",
+      "*.bat",
+      "*.sh",
+      "*.ps1"
+    ],
+    "rewrites": [
+      {
+        "source": "/community/**",
+        "destination": "/build/index.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

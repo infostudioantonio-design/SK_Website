@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Admins by email (simple bootstrap). Update this list when needed.
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'admin@superkonnected.nl' ||
+        request.auth.token.email == 'info@superkonnected.nl' ||
+        request.auth.token.email == 'abdul@superkonnected.nl' ||
+        request.auth.token.email == 'team@superkonnected.nl' ||
+        request.auth.token.email == 'support@superkonnected.nl'
+      );
+    }
+
+    // Users: only own read/write; admins full access
+    match /users/{userId} {
+      allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+    }
+
+    // Community posts: publiek leesbaar; schrijven door auteur of admin
+    match /communityPosts/{postId} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.auth.uid == request.resource.data.authorId;
+      allow update, delete: if isAdmin() || (isSignedIn() && request.auth.uid == resource.data.authorId);
+    }
+
+    // Podcast sessions: publiek leesbaar; schrijven alleen admin
+    match /podcastSessions/{sessionId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Podcast suggesties: aanmaken door ingelogde gebruikers; beheren door admin
+    match /podcastSuggestions/{suggestionId} {
+      allow create: if isSignedIn();
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Membership tiers: publiek leesbaar; schrijven admin
+    match /membershipTiers/{tierId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Training modules: publiek leesbaar; schrijven admin
+    match /trainingModules/{moduleId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Community messages: auteur of admin kan lezen/bewerken; iedereen kan aanmaken als ingelogd
+    match /communityMessages/{messageId} {
+      allow create: if isSignedIn();
+      allow read: if isAdmin() || (isSignedIn() && request.auth.uid == resource.data.authorId);
+      allow update, delete: if isAdmin() || (isSignedIn() && request.auth.uid == resource.data.authorId);
+    }
+  }
+}
