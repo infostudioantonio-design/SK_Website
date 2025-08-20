@@ -281,6 +281,14 @@ const App: React.FC = () => {
               <h1 className="text-xl font-bold text-white font-poppins">
                 SuperKonnected
               </h1>
+              <a 
+                href="https://superkonnected.nl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-white text-sm font-medium transition-colors"
+              >
+                ← Terug naar Hoofdsite
+              </a>
             </div>
 
             {/* Navigation Tabs */}
