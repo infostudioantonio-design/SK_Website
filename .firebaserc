@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "superkonnectedwebsite": {
+      "hosting": {
+        "community": [
+          "community.superkonnected.nl"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
