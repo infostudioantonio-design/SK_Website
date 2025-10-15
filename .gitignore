@@ -35,3 +35,9 @@ firestore-debug.log
 
 # OS
 Thumbs.db
+
+# Large video files
+*.mp4
+*.mov
+*.avi
+*.webm
