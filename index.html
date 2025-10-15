@@ -187,15 +187,23 @@
                 </div>
                 
                 <div class="promo-video">
-                    <video 
-                        controls 
-                        preload="metadata"
-                        poster=""
-                        class="promo-video-player"
-                        controlsList="nodownload">
+                    <!-- Vimeo Embed -->
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe 
+                            src="https://player.vimeo.com/video/1127661599?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            title="SuperKonnected Promo">
+                        </iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    
+                    <!-- Backup: Lokale video voor development -->
+                    <!-- <video controls preload="metadata" poster="" class="promo-video-player" controlsList="nodownload">
                         <source src="public/SuperKonnected_Promo..mp4" type="video/mp4">
                         Je browser ondersteunt deze video niet.
-                    </video>
+                    </video> -->
                 </div>
                 
                 <div class="promo-cta" style="text-align: center; margin-top: 2rem;">
