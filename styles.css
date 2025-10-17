@@ -69,6 +69,14 @@ html {
 
 /* Dark Mode Variables */
 [data-theme="dark"] {
+    /* Brand Colors blijven hetzelfde in dark mode */
+    --primary-blue: #0A2342;
+    --primary-orange: #FF6B35;
+    --gradient-primary: linear-gradient(135deg, #0A2342 0%, #FF6B35 20%, #FFB366 70%, #FFC599 100%);
+    --gradient-orange: linear-gradient(135deg, #FF6B35 0%, #FFB366 50%, #FFC599 80%, #FFD1B3 100%);
+    --gradient-blue: linear-gradient(135deg, #0A2342 0%, #FF6B35 30%, #FFB366 100%);
+    
+    /* Alleen grays worden aangepast */
     --gray-50: #111827;
     --gray-100: #1F2937;
     --gray-200: #374151;
@@ -977,6 +985,35 @@ h1, h2, h3, h4, h5, h6 {
     
     .promo-section {
         padding: 60px 0;
+    }
+    
+    .promo-content {
+        padding: 0 1rem;
+    }
+    
+    .promo-video {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .promo-video iframe {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .promo-cta {
+        padding: 0 1rem;
+    }
+    
+    .promo-cta .btn {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -4632,6 +4669,53 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Extra Small Mobile Devices */
 @media (max-width: 480px) {
+    /* Body and HTML fixes for centering */
+    body, html {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    
+    /* Promo Section Mobile Fixes */
+    .promo-section {
+        padding: 40px 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .promo-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .promo-text p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .promo-video {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .promo-cta .btn {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
@@ -4777,6 +4861,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Performance Optimizations */
 @media (max-width: 768px) {
+    /* Force brand colors on mobile */
+    :root {
+        --primary-blue: #0A2342 !important;
+        --primary-orange: #FF6B35 !important;
+        --gradient-primary: linear-gradient(135deg, #0A2342 0%, #FF6B35 20%, #FFB366 70%, #FFC599 100%) !important;
+        --gradient-orange: linear-gradient(135deg, #FF6B35 0%, #FFB366 50%, #FFC599 80%, #FFD1B3 100%) !important;
+        --gradient-blue: linear-gradient(135deg, #0A2342 0%, #FF6B35 30%, #FFB366 100%) !important;
+    }
+    
     /* Reduce animations on mobile for better performance */
     .hero-layer {
         animation-duration: 3s;
@@ -4803,13 +4896,9 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Better focus states for accessibility */
     .btn:focus,
-}
-
-
     .nav-link:focus,
     .accordion-header:focus {
         outline: 2px solid var(--primary-orange);
         outline-offset: 2px;
->>>>>>> 28800981a11c91e2aa3f4d0ac6da797c5ceb7637
     }
 }
