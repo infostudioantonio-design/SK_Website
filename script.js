@@ -58,6 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize Request Cards
     initRequestCards();
     
+    // Check if URL has #gast hash and open modal
+    if (window.location.hash === '#gast') {
+        setTimeout(() => {
+            const heroButton = document.querySelector('.btn-ghost');
+            if (heroButton) {
+                heroButton.click();
+            }
+        }, 500);
+    }
 
 });
 
